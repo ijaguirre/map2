@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<title>Tabletop to Leaflet - Ignacio </title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+    <!-- Mobile meta tags-->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- Facebook meta tags-->
+	<meta property="og:title" content="Tabletop to Leaflet"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content=""/>
+	<meta property="og:image" content="/imgs/ss.jpg"/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content="This template pulls data from a Google spreadsheet and pushes it to a Leaflet map. The data we are using in this example is a list of breweries in Iowa." />
+
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/lib/leaflet-0.75.css" />
+	<link rel="stylesheet" href="css/lib/MarkerCluster-0.4.0.css" />
+	<link rel="stylesheet" href="css/lib/MarkerCluster.Default-0.4.0.css" />
+	<link rel="stylesheet" href="css/lib/bootstrap.min-3.3.5.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<!-- Javascript -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+	<script src="js/lib/leaflet-0.75.js"></script>
+	<script src="js/lib/leaflet.markercluster-src-0.4.0.js"></script>
+	<script src="js/lib/tile.stamen-1.3.0.js"></script>
+	<script src="js/lib/tabletop-1.4.2.js"></script>
+
+    <noscript>
+		<div id="noscript_note">
+			You must have JavaScript enabled to view this page.
+		</div>
+	</noscript>
+
+
+
+
+		<div id="share">
+        	<ul>
+            <li class="float_left">
+                <a data-text="" href="http://twitter.com/share" class="twitter-share-button"
+                    data-count="horizontal">Tweet</a>
+                <script src="http://platform.twitter.com/widgets.js"></script>
+            </li>
+            <li>
+                <div id="fb-root"></div>
+                <script src="http://connect.facebook.net/en_US/all.js#appId=161694630579757&amp;xfbml=1"></script><fb:like href="" send="false" layout="button_count" width="90" show_faces="false" font="">
+                </fb:like>
+            </li>
+        	</ul>
+    	</div>
+
+
+
+	<div class="toggle_description btn" type="button">
+		About this map
+	</div>
+
+	<div class="description_box">
+		<div class="x_button toggle_description btn btn-primary" type="button">
+			<strong>X</strong>
+		</div>
+		<div class="description_box_header"></div>
+		<div class="description_box_content">
+			<div class="description_box_text"></div>
+			<div id="caption_box"></div>
+		</div>
+	</div>
+	<div class="description_box_cover"></div>
+
+	<div id="map"></div>
+
+	<script src="js/base.js"></script>
+	<script src="js/base-map.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
